@@ -114,7 +114,7 @@ public class LR_Table
             row = itr.next();
             cell = row.getCell(0);
 
-            if(!cell.getStringCellValue().trim().isEmpty())
+            if(cell != null && !cell.getStringCellValue().trim().isEmpty())
             {
                 val = cell.getStringCellValue().trim();
                 if(val.equals("TER") || val.equals("N"))
